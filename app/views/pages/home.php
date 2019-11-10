@@ -1,4 +1,9 @@
+<?php echo PATH_APP . '/views/inc/header.php'; ?>
 <p><?php echo $data['title'];?></p>
-<p><?php echo PATH_APP; ?></p>
+<ul>
+    <?php foreach($data['skills'] as $skill): ?>
+        <li> <?php echo $skill->name; ?> </li>
+    <?php endforeach; ?>
+</ul>
 
-
+<?php echo PATH_APP . '/views/inc/footer.php'; ?>

@@ -23,6 +23,22 @@
 
             require_once '../app/controllers/'.$this->actualController.'.php';
             $this->actualController = new $this->actualController;
+
+            if (isset($url[1])) {
+                
+                if (method_exists($this->actualController, ($url[1]))) {
+                    $this->actualMethod = ($url[1]);
+                    
+                    unset($url[1]);
+                }
+
+            }
+
+            //echo $this->actualMethod;
+            $this->params = $url ? array_values($url) : [];
+
+            call_user_func_array([$this->actualController, $this->actualMethod], $this->params);
+
         }
 
         public function getUrl(){

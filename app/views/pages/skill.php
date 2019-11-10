@@ -1,0 +1,1 @@
+<h1>Articulo Page</h1>

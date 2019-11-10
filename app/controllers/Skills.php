@@ -2,7 +2,7 @@
     class skills {
 
         public function __construct(){
-            $this->skillModel = $this->models('skill');
+            $this->skillModel = $this->models('Skill');
         }
 
         public function index(){
@@ -10,7 +10,7 @@
         }
 
         public function edit($id){
-            $this->view('skills' => ['skill' => $skill]):
+            
             
         }
 

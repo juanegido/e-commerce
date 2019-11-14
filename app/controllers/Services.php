@@ -1,23 +1,23 @@
 <?php
-    class Skills extends Controller{
+    class Services extends Controller{
         public function __construct(){
-            $this->skillModel = $this->model('Skill');
+            $this->serviceModel = $this->model('Service');
             
         }
 
         public function index(){
 
-            $skills = $this->skillModel->getSkills();
+            $services = $this->serviceModel->getServices();
             
             $data = [
                 'title' => 'Welcome to TachBot site', 
-                'Skills' => $skills
+                'Services' => $services
             ];
 
-            $this->view('pages/skills', $data);
+            $this->view('pages/services', $data);
         }
 
-        public function byCategory($id_category){
+        public function service($id_category){
             //$this->view('pages/skill');
             
         }

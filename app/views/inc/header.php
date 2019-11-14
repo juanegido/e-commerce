@@ -23,7 +23,8 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
                     <a id="1" class="nav-item nav-link" href="about">SOBRE NOSOTROS</a>
-                    <a class="nav-item nav-link" href="skills">SERVICIOS</a>
+                    <a class="nav-item nav-link" href="services">SERVICIOS</a>
+                    <a class="nav-item nav-link" href="skills">HABILIDADES</a>
                     <a class="nav-item nav-link active" href="/LOGIN_Tachbot/vista/homePage.php">BOTS</a>
                     <a class="nav-item nav-link" href="blog">BLOG</a>
                     <a class="nav-item nav-link" href="contact">CONTACTO</a>

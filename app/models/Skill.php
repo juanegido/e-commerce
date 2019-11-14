@@ -11,6 +11,11 @@
             return $this->db->records();
         }
 
+        public function getSkillsByCategory($id_category){
+            $this->db->query("SELECT * FROM skills WHERE id_category=$id_category");
+            return $this->db->records();
+        }
+
     }
 
 

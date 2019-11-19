@@ -17,7 +17,7 @@
             $this->view('pages/skills', $data);
         }
 
-        public function byCategory($id_category){
+        public function Category($id_category){
             //$this->view('pages/skill');
             
         }

@@ -13,7 +13,7 @@
     <!--Navegación-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="<?php echo PATH_URL; ?>">
                 <p>TACHBOT</p>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -23,9 +23,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
                     <a id="1" class="nav-item nav-link" href="about">SOBRE NOSOTROS</a>
-                    <a class="nav-item nav-link" href="services">SERVICIOS</a>
-                    <a class="nav-item nav-link" href="skills">HABILIDADES</a>
-                    <a class="nav-item nav-link active" href="/LOGIN_Tachbot/vista/homePage.php">BOTS</a>
+                    <a class="nav-item nav-link" href="<?php echo PATH_URL; ?>/public/services">SERVICIOS</a>
                     <a class="nav-item nav-link" href="blog">BLOG</a>
                     <a class="nav-item nav-link" href="contact">CONTACTO</a>
                     <a class="nav-item nav-link" href="/LOGIN_Tachbot/vista/login.php">LOGIN <span
@@ -34,7 +32,6 @@
             </div>
         </div>
     </nav>
-
 	
 	<!--JAVASCRIPT-->
 	<script src="js/jquery-3.4.1.min.js"></script>

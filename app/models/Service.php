@@ -11,8 +11,8 @@
             return $this->db->records();
         }
 
-        public function getSkillsService($id_category){
-            $this->db->query("SELECT * FROM skills WHERE id_category=$id_category");
+        public function getskillservice($id_service){
+            $this->db->query("SELECT * FROM skills WHERE id_category=$id_service");
             return $this->db->records();
         }
 

@@ -24,7 +24,29 @@
               <h5 class="mt-0 font-weight-bold mb-2"><?php echo $service->name; ?></h5>
               <p class="font-italic text-muted mb-0 small"><?php echo $service->description; ?></p>
               <div class="d-flex align-items-center justify-content-between mt-1">
+
+              <p class="font-italic text-muted mb-0 small">
+              <?php 
+
+                $json = file_get_contents(PATH_URL . "/api/get/skills/");
+                //Decode JSON
+                $json = json_decode($json);
+
+                foreach($json->data as $mydata){
+                  if ($service->id_service == $mydata->id_category){
+                    echo $mydata->name . " ";
+                    
+                  }
+                }
+              
+              ?>
+                 
+              </p>
+              <br></br>        
+              
+
                 <h6 class="font-weight-bold my-2"><?php echo $service->price; ?></h6>
+                
                 <ul class="list-inline small">
                   <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
                   <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
@@ -32,6 +54,9 @@
                   <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
                   <li class="list-inline-item m-0"><i class="fa fa-star-o text-gray"></i></li>
                 </ul>
+                <a href="services/skills/ <?php echo $service->id_service; ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ver habilidades</a>
+             
+             
               </div> 
             </div><img src="<?php echo PATH_URL;?>\public\img\<?php echo $service->img;?>" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
           </div>
@@ -44,5 +69,6 @@
     </div>
   </div>
 </div>
+
 
 <?php require PATH_APP . '/views/inc/footer.php'; ?>

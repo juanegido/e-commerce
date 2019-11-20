@@ -19,7 +19,7 @@
 
         public function skills($id_service){
 
-            $services = $this->serviceModel->getskillsservice($id_service);
+            $skills = $this->serviceModel->getskillservice($id_service);
             
             $data = [
                 'title' => 'Welcome to TachBot site', 
@@ -30,13 +30,5 @@
 
         }
 
-        public function service($id_category){
-            //$this->view('pages/skill');
-            
-        }
-
-        public function update($num_reg){
-            echo $num_reg;
-        }
     }
 ?>

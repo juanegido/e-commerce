@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--
+    - Base de datos: 'tachbot'
+    -->
+    <tachbot>
+        <!-- Tabla servicio -->
+        <servicio>
+            <nombre>CBmayor</nombre>
+            <id_servicio>1</id_servicio>
+            <precio>25</precio>
+            <descripcion>Chatbot destinado a personas mayores</descripcion>
+            <imagen>mayor.png</imagen>
+        </servicio>
+        <servicio>
+            <nombre>CBjoven</nombre>
+            <id_servicio>2</id_servicio>
+            <precio>30</precio>
+            <descripcion>Chatbot destinado a un público joven</descripcion>
+            <imagen>joven.png</imagen>
+        </servicio>
+        <servicio>
+            <nombre>CBgeneral</nombre>
+            <id_servicio>3</id_servicio>
+            <precio>35</precio>
+            <descripcion>Chatbot destinado a un público general</descripcion>
+            <imagen>general.png</imagen>
+        </servicio>
+        <servicio>
+            <nombre>CBeCommerce</nombre>
+            <id_servicio>4</id_servicio>
+            <precio>50</precio>
+            <descripcion>Chatbot destinado a empresas</descripcion>
+            <imagen>ecommerce.png</imagen>
+        </servicio>   
+        <servicio>
+            <nombre>HBtraductor</nombre>
+            <id_servicio>5</id_servicio>
+            <precio>10</precio>
+            <descripcion>Incluye la habilidad de traducir a tu Chatbot</descripcion>
+            <imagen>english.png</imagen>
+        </servicio> 
+        <servicio>
+            <nombre>HBmatemáticas</nombre>
+            <id_servicio>6</id_servicio>
+            <precio>10</precio>
+            <descripcion>Incluye la habilidad de cálculo a tu Chatbot</descripcion>
+            <imagen>maths.png</imagen>
+        </servicio> 
+        <servicio>
+            <nombre>HBalarma</nombre>
+            <id_servicio>7</id_servicio>
+            <precio>10</precio>
+            <descripcion>Incluye la habilidad de alarma a tu Chatbot</descripcion>
+            <imagen>alarm.png</imagen>
+        </servicio> 
+     
+
+        <!--
+        <servicio>
+            <nombre>HB...</nombre>
+            <id_servicio>8</id_servicio>
+            <precio>1</precio>
+            <descripcion>Incluye la habilidad de ... a tu Chatbot.</descripcion>
+            <imagen>icon.ico</imagen>
+        </servicio>
+        -->
+    
+    </tachbot>
